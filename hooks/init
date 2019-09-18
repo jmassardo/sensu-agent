@@ -1,0 +1,1 @@
+Start-Process {{pkg.path}}\bin\sensu-agent.exe -ArgumentList "service install --config-file {{pkg.svc_config_path}}\agent.yml --log-file {{pkg.svc_var_path}}\sensu-agent.log" -Wait

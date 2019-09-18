@@ -1,0 +1,3 @@
+Write-Host "Uninstalling {{pkg.name}}"
+Start-Process {{pkg.path}}\bin\sensu-agent -ArgumentList "service uninstall"
+Write-Host "{{pkg.name}} was uninstalled"

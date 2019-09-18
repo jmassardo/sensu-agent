@@ -1,0 +1,5 @@
+$pkg_origin="jmassardo"
+$pkg_name="sensu-agent"
+$pkg_version="5.13.1"
+$pkg_release="20190918152032"
+$pkg_ident="jmassardo/sensu-agent/5.13.1/20190918152032"

@@ -1,0 +1,47 @@
+##
+# authentication configuration
+##
+id = "hab-sensu-agent"
+organization = "default"
+environment = "default"
+subscriptions = "windows"
+backend-urls = [
+  "ws://10.1.1.4:8081"
+]
+
+user = "admin"
+password = "P@ssw0rd!"
+
+##
+# api configuration
+##
+api-host = "10.1.1.4"
+api-port = 3031
+disable-api = false
+
+##
+# socket configuration
+##
+disable-sockets = false
+socket-host = "10.1.1.4"
+socket-port = 3030
+
+##
+# statsd configuration
+##
+statsd-disable = false
+statsd-event-handlers = ""
+statsd-flush-interval = 10
+statsd-metrics-host = "10.1.1.4"
+statsd-metrics-port = 8125
+
+##
+# other
+##
+deregister = false
+deregistration-handler = ""
+keepalive-timeout = 120
+keepalive-interval = 20
+custom-attributes = ""
+log-level = "warn"
+redact = ""

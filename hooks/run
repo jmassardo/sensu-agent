@@ -1,0 +1,5 @@
+Start-Process {{pkg.path}}\bin\sensu-agent.exe -ArgumentList "start"
+
+while ($true){
+    sleep 30
+}
