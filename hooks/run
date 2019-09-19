@@ -1,5 +1,12 @@
 Start-Process {{pkg.path}}\bin\sensu-agent.exe -ArgumentList "start"
 
-while ($true){
-    sleep 30
+$p = Get-Process -ProcessName SensuAgent -ErrorAction SilentlyContinue
+
+while ($p){
+    Write-Output "Hi"
+    sleep 5
+    $p = Get-Process -ProcessName SensuAgent -ErrorAction SilentlyContinue
+    if (!$p){
+        Write-Output "Service not runnning"
+    }
 }
