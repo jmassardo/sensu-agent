@@ -1,3 +1,3 @@
 # sensu-agent
 
-Testing package for the sensu agent for windows.
+This is a sample Habitat plan for installing the Sensu agent on a Windows system.
